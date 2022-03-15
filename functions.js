@@ -70,7 +70,6 @@ Escriba una función que dado un número n, retorne la suma de los números ingr
         Su programa debe mostrar la opción de "INGRESAR UN NÚMERO", a menos que el usuario escriba 'MENU', con lo cual su programa debe finalizar. 
     */
 function sumarAvanzado(n) {
-  console.log("entró");
   let suma = 0;
   for (let i = 0; i < n; i++) {
     let numero = Number(prompt("Ingrese un numero por favor"));
@@ -143,4 +142,4 @@ function secuenciar(a) {
   }
 }
 
-selector();
+selector(); // ejecuto la primer función, que es la que llama al resto
