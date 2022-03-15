@@ -22,7 +22,7 @@
     */
 function selector() {
   let accion = prompt(
-    "Que desea hacer? \nA - SUMA_AVANZADA \n B - MULTIPLICACION_AVANZADA \n C - SECUENCIA \n FiN para terminar"
+    "Que desea hacer? \nA - SUMA_AVANZADA \nB - MULTIPLICACION_AVANZADA \nC - SECUENCIA \nFiN para terminar"
   ).toLowerCase();
   let cantNumeros = 0;
   let bandera = true;
@@ -42,7 +42,7 @@ function selector() {
         break;
       case "c":
         cantNumeros = Number(
-          prompt("Ingrese la cantidad de numero a calcular:")
+          prompt("Hasta que posicion de la secuencia Fibonacci quiere ver?")
         );
         secuenciar(cantNumeros);
         break;
@@ -124,15 +124,22 @@ function multiplicarAvanzado(c) {
      El sistema siempre debe mostrar una ventana donde le permite al usuario "INGRESAR UN NÚMERO" o "MENU" para finalizar.
     */
 function secuenciar(a) {
-  let numero = 1;
-  for (let i = 0; i < a; i++) {
-    numero = Number(prompt("Ingrese el numero secuencial que desea calcular"));
-    let resta = numero - 1;
-    let fib = resta + (numero - 2);
-    if (numero === 1 || numero === 0) {
-      fib = 1;
+  // 0,1,1,2,3,5,8,13,21,34.. sumo los 2 cultomos números para obtener el siguiente
+  if (!isNaN(a)) {
+    //verifico que a se un numero
+    let fibo1 = 0;
+    let fibo2 = 1;
+    let contador = 1;
+    let posicionado = 0;
+    console.log(fibo1);
+    console.log(fibo2);
+    for (let i = 3; i <= a; i++) {
+      posicionado = fibo1 + fibo2;
+      console.log(posicionado);
+      contador = contador + posicionado;
+      fibo1 = fibo2;
+      fibo2 = posicionado;
     }
-    alert(`Secuencia de ${numero} es ${fib}`);
   }
 }
 
