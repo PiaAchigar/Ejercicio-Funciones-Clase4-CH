@@ -77,7 +77,16 @@ function factorial(c) {
             d. El sistema debe mostrar una ventana donde el usuario debe ingresar una opción de las mencionadas arriba o FIN para terminar
     */
 function secuencia(a) {
-  console.log("estoy en secuencia");
+  let numero = 1;
+  for (let i = 0; i < a; i++) {
+    numero = Number(prompt("Ingrese el numero secuencial que desea calcular"));
+    let resta = numero - 1;
+    let fib = resta + (numero - 2);
+    if (numero === 1 || numero === 0) {
+      fib = 1;
+    }
+    alert(`Secuencia de ${numero} es ${fib}`);
+  }
 }
 
 selector();
