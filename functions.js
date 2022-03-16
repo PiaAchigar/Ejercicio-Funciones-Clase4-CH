@@ -1,9 +1,4 @@
 /*FUNCION 1: 
-            Escriba una función que permita seleccionar una operación de las siguientes: 
-            a. SUMAR UN NÚMERO n DE NÚMEROS  (sumar(n))
-            b. MULTIPLICAR Un Número n de operandos (factorial(c))
-            c. SECUENCIA (secuencia(a))
-              Escriba una función que permita mostrar el menú de una calculadora avanzada. 
             El programa debe mostrar siempre las siguientes opciones: 
                 SUMA_AVANZADA 
                 MULTIPLICACION_AVANZADA
