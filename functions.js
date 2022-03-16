@@ -123,7 +123,7 @@ function multiplicarAvanzado(c) {
      El sistema siempre debe mostrar una ventana donde le permite al usuario "INGRESAR UN NÚMERO" o "MENU" para finalizar.
     */
 function secuenciar(a) {
-  // 0,1,1,2,3,5,8,13,21,34.. sumo los 2 cultomos números para obtener el siguiente
+  // 0,1,1,2,3,5,8,13,21,34.. sumo los 2 ultimos números para obtener el siguiente
   if (!isNaN(a)) {
     //verifico que a se un numero
     let fibo1 = 0;
